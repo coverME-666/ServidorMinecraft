@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd2d234c-e0eb-41b3-8621-f009eb914e4f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClienteColab.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ColabServer.ipynb" beforeDir="false" />
-    </list>
+    <list default="true" id="cd2d234c-e0eb-41b3-8621-f009eb914e4f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,20 +21,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;features&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kevin/OneDrive/Documentos/Proyectos/ServidorMinecraft&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "develop",
+    "last_opened_file_path": "C:/Users/kevin/OneDrive/Documentos/Proyectos/ServidorMinecraft",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kevin\OneDrive\Documentos\Proyectos\ServidorMinecraft" />
@@ -65,7 +61,7 @@
       <workItem from="1746577495895" duration="9977000" />
       <workItem from="1746592394092" duration="1265000" />
       <workItem from="1746632911720" duration="8926000" />
-      <workItem from="1747063210533" duration="1101000" />
+      <workItem from="1747063210533" duration="1410000" />
     </task>
     <servers />
   </component>
@@ -78,11 +74,11 @@
         <entry key="$PROJECT_DIR$/-ColabServer.ipynb" value="9223372036854775807" />
         <entry key="$PROJECT_DIR$/.idea/workspace.xml" value="1747063935413" />
         <entry key="$PROJECT_DIR$/ClienteColab.py" value="9223372036854775807" />
-        <entry key="$PROJECT_DIR$/ColabServer.ipynb" value="1746584892291" />
+        <entry key="$PROJECT_DIR$/ColabServer.ipynb" value="9223372036854775807" />
       </map>
     </option>
-    <option name="lastCommitHash" value="36f96350a67ad6e77a0a155cc1632f1cc81b5540" />
-    <option name="lastIndexTimestamp" value="1747063935413" />
+    <option name="lastCommitHash" value="193ff104685ee02f3823ffa6c581a19c275388aa" />
+    <option name="lastIndexTimestamp" value="1747064393658" />
     <option name="repositoryId" value="a1acf302-cba7-4228-99b9-eba614dcb580" />
     <option name="state" value="FULLY_INDEXED" />
   </component>
