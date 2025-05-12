@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd2d234c-e0eb-41b3-8621-f009eb914e4f" name="Changes" comment="" />
+    <list default="true" id="cd2d234c-e0eb-41b3-8621-f009eb914e4f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +27,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "feature/implementacion-inicial",
     "last_opened_file_path": "C:/Users/kevin/OneDrive/Documentos/Proyectos/ServidorMinecraft",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -61,7 +63,7 @@
       <workItem from="1746577495895" duration="9977000" />
       <workItem from="1746592394092" duration="1265000" />
       <workItem from="1746632911720" duration="8926000" />
-      <workItem from="1747063210533" duration="1410000" />
+      <workItem from="1747063210533" duration="1773000" />
     </task>
     <servers />
   </component>
@@ -72,13 +74,13 @@
     <option name="indexedFilesMap">
       <map>
         <entry key="$PROJECT_DIR$/-ColabServer.ipynb" value="9223372036854775807" />
-        <entry key="$PROJECT_DIR$/.idea/workspace.xml" value="1747063935413" />
+        <entry key="$PROJECT_DIR$/.idea/workspace.xml" value="1747064658656" />
         <entry key="$PROJECT_DIR$/ClienteColab.py" value="9223372036854775807" />
         <entry key="$PROJECT_DIR$/ColabServer.ipynb" value="9223372036854775807" />
       </map>
     </option>
     <option name="lastCommitHash" value="193ff104685ee02f3823ffa6c581a19c275388aa" />
-    <option name="lastIndexTimestamp" value="1747064393658" />
+    <option name="lastIndexTimestamp" value="1747064658656" />
     <option name="repositoryId" value="a1acf302-cba7-4228-99b9-eba614dcb580" />
     <option name="state" value="FULLY_INDEXED" />
   </component>
