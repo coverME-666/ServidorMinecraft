@@ -68,6 +68,8 @@
       <workItem from="1746592394092" duration="1265000" />
       <workItem from="1746632911720" duration="8926000" />
       <workItem from="1747063210533" duration="1773000" />
+      <workItem from="1747149614356" duration="4527000" />
+      <workItem from="1747595956776" duration="1214000" />
     </task>
     <servers />
   </component>
@@ -89,14 +91,14 @@
     <option name="indexedFilesMap">
       <map>
         <entry key="$PROJECT_DIR$/-ColabServer.ipynb" value="9223372036854775807" />
-        <entry key="$PROJECT_DIR$/.idea/workspace.xml" value="1747076790707" />
+        <entry key="$PROJECT_DIR$/.idea/workspace.xml" value="1747601367723" />
         <entry key="$PROJECT_DIR$/ClienteColab.py" value="9223372036854775807" />
         <entry key="$PROJECT_DIR$/ColabServer.ipynb" value="9223372036854775807" />
-        <entry key="$PROJECT_DIR$/ServerColab.ipynb" value="1747068274405" />
+        <entry key="$PROJECT_DIR$/ServerColab.ipynb" value="1747596135979" />
       </map>
     </option>
-    <option name="lastCommitHash" value="5970a63a123ad76f3e51db50194d969581e8a279" />
-    <option name="lastIndexTimestamp" value="1747076790707" />
+    <option name="lastCommitHash" value="4af14189f62985387e13f7e73641918da656691c" />
+    <option name="lastIndexTimestamp" value="1747601367723" />
     <option name="repositoryId" value="a1acf302-cba7-4228-99b9-eba614dcb580" />
     <option name="state" value="FULLY_INDEXED" />
   </component>
