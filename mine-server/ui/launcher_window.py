@@ -23,8 +23,7 @@ class LauncherWindow(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Minecraft Server Launcher")
-        self.setFixedSize(900, 500)
-        # Cargar QSS global
+        self.setFixedSize(900, 666)
         qss_path = os.path.join(os.path.dirname(__file__), 'styles', 'main.qss')
         if os.path.exists(qss_path):
             with open(qss_path, 'r', encoding='utf-8') as f:
@@ -43,39 +42,43 @@ class LauncherWindow(QtWidgets.QWidget):
         main_layout = QtWidgets.QHBoxLayout(self)
         main_layout.setContentsMargins(30, 30, 30, 30)
 
-        left_panel = QtWidgets.QWidget()
-        left_layout = QtWidgets.QVBoxLayout(left_panel)
+        # Panel izquierdo con scroll
+        left_panel = QtWidgets.QScrollArea()
+        left_panel.setWidgetResizable(True)
+        left_panel.setFrameShape(QtWidgets.QFrame.NoFrame)
+
+        left_widget = QtWidgets.QWidget()
+        left_layout = QtWidgets.QVBoxLayout(left_widget)
         left_layout.setContentsMargins(0, 0, 0, 0)
+        left_layout.setSpacing(20)
 
-        # Crear servidor
         self.crear_servidor = CrearServidorWidget()
-        left_layout.addWidget(self.crear_servidor, alignment=QtCore.Qt.AlignLeft | QtCore.Qt.AlignTop)
+        left_layout.addWidget(self.crear_servidor)
 
-        # Configuración del mundo en scroll area
-        scroll_area = QtWidgets.QScrollArea()
-        scroll_area.setWidgetResizable(True)
-        scroll_area.setFixedHeight(220)
-        scroll_area.setFrameShape(QtWidgets.QFrame.NoFrame)
-        self.config_mundo = ConfiguracionMundoWidget()
-        scroll_area.setWidget(self.config_mundo)
-        left_layout.addWidget(scroll_area, alignment=QtCore.Qt.AlignLeft | QtCore.Qt.AlignTop)
-
-        left_layout.addStretch()
-        main_layout.addWidget(left_panel, 2)
-        main_layout.addSpacing(20)
-
-        right_panel = QtWidgets.QWidget()
-        right_layout = QtWidgets.QVBoxLayout(right_panel)
-        right_layout.setContentsMargins(0, 0, 0, 0)
+        self.gestion_mundos = GestionMundosWidget()
+        left_layout.addWidget(self.gestion_mundos)
 
         self.consola = ConsolaWidget()
         usuario = getpass.getuser()
-        self.consola.setText(f"¿Qué vamos a crear hoy, {usuario}?...")  # Mensaje inicial
-        self.consola.setFixedHeight(240)
-        right_layout.addWidget(self.consola)
+        self.consola.setText(f"¿Qué vamos a crear hoy, {usuario}?...")  # mensaje inicial
+        left_layout.addWidget(self.consola)
 
-        self.gestion_mundos = GestionMundosWidget()
-        right_layout.addWidget(self.gestion_mundos)
-        right_layout.addStretch()
+        left_layout.addStretch()
+        left_panel.setWidget(left_widget)
+        main_layout.addWidget(left_panel, 1)
 
+        # Panel derecho
+        right_panel = QtWidgets.QWidget()
+        right_layout = QtWidgets.QVBoxLayout(right_panel)
+        right_layout.setContentsMargins(0, 0, 0, 0)
+        right_layout.setSpacing(0)
+
+        scroll_area = QtWidgets.QScrollArea()
+        scroll_area.setWidgetResizable(True)
+        scroll_area.setFrameShape(QtWidgets.QFrame.NoFrame)
+
+        self.config_mundo = ConfiguracionMundoWidget()
+        scroll_area.setWidget(self.config_mundo)
+
+        right_layout.addWidget(scroll_area, stretch=1)
         main_layout.addWidget(right_panel, 1)

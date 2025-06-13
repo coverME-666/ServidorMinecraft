@@ -1,69 +1,109 @@
 QWidget {
     font-size: 15px;
-    /* background: #fff; */ /* <- Elimina o comenta esta línea */
-    color: #145a32;
+    background: #23272e;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-/* Grupos con efecto pixel-art */
-QGroupBox#serverGroup, QGroupBox#worldGroup {
-    border: 4px solid #4CAF50;
-    border-radius: 0px;
-    margin-top: 0px;
-    background: #fff;
-    padding: 5px 40px 5px 40px; /* Aumenta el padding lateral */
+/* Crear servidor */
+#groupCrearServidor {
+    margin-top: 24px;
+    padding: 24px;
+}
+
+/* Aumentar el espaciado de los campos */
+#groupCrearServidor QLineEdit, #groupCrearServidor QComboBox {
+    min-height: 40px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+}
+
+/* Configuración del mundo: ocupa todo el alto */
+#scrollConfigMundo {
+    min-height: 100%;
+}
+
+/* Gestión de mundos */
+#groupGestionMundos {
+    margin-top: 32px;
+}
+
+/* Caja principal genérica */
+QGroupBox {
+    border: none;
+    border-radius: 16px;
+    margin-top: 16px;
+    background: #2c313a;
+    padding: 16px 24px;
     box-shadow: none;
 }
 
-QGroupBox#serverGroup:title, QGroupBox#worldGroup:title {
+/* Título sin sombra ni efecto */
+QGroupBox:title {
     subcontrol-origin: margin;
     subcontrol-position: top center;
     left: 0px;
     right: 0px;
-    padding: 18px 12px 0 12px;
-    color: #219150;
+    padding: 8px 12px 0 12px;
+    color: #7ee787;
     font-weight: bold;
-    font-size: 21px;
+    font-size: 18px;
     letter-spacing: 1px;
     background: transparent;
     margin-top: 0px;
-    font-family: 'Press Start 2P', 'Consolas', monospace;
-    text-shadow: 2px 2px 0 #4CAF50;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
+/* ScrollArea y su viewport con borde redondeado */
 QScrollArea {
     border: none;
     background: transparent;
+    border-radius: 16px;
+}
+QScrollArea > QWidget {
+    border-radius: 16px;
+    background: transparent;
+}
+QAbstractScrollArea::viewport {
+    border-radius: 16px;
+    background: transparent;
 }
 
+/* Forzar color blanco puro en textos importantes */
+QLabel, QCheckBox, QRadioButton, QPushButton, QGroupBox, QLineEdit, QComboBox, QTextEdit {
+    color: #ffffff;
+    background: transparent;
+}
+
+/* Entradas y combos */
 QLineEdit, QComboBox, QTextEdit {
-    background: #fff;
-    border: 3px solid #4CAF50;
-    border-radius: 0px;
+    background: #23272e;
+    border: 2px solid #3a3f4b;
+    border-radius: 8px;
     padding: 10px 16px;
     font-size: 15px;
-    color: #145a32;
-    font-family: 'Consolas', monospace;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
+/* QComboBox sin flecha ni drop-down */
 QComboBox {
-    background: #fff;
-    border: 3px solid #4CAF50;
-    border-radius: 0px;
+    background: #23272e;
+    border: 2px solid #3a3f4b;
+    border-radius: 8px;
     padding: 10px 16px;
     font-size: 15px;
-    color: #145a32;
+    color: #e0e0e0;
     min-width: 120px;
-    font-family: 'Consolas', monospace;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
-
 QComboBox::drop-down {
+    width: 0px;
     border: none;
     background: transparent;
-    width: 24px; /* Mantiene la proporción original */
     margin: 0;
     padding: 0;
 }
-
 QComboBox::down-arrow {
     width: 0px;
     height: 0px;
@@ -73,74 +113,77 @@ QComboBox::down-arrow {
     border: none;
     background: transparent;
 }
-
 QComboBox QAbstractItemView {
-    background: #fff;
-    border: 3px solid #4CAF50;
-    selection-background-color: #e8f5e9;
-    color: #145a32;
-    border-radius: 0px;
-    font-family: 'Consolas', monospace;
+    background: #23272e;
+    border: 2px solid #3a3f4b;
+    selection-background-color: #31363f;
+    color: #e0e0e0;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
+/* Botón */
 QPushButton {
-    background-color: #fff;
-    color: #219150;
-    border: 4px solid #4CAF50;
-    border-radius: 0px;
+    background-color: #3a3f4b;
+    color: #7ee787;
+    border: none;
+    border-radius: 12px;
     padding: 10px 22px;
     font-weight: bold;
-    font-family: 'Press Start 2P', 'Consolas', monospace;
+    font-family: 'Segoe UI', Arial, sans-serif;
     font-size: 15px;
     letter-spacing: 1px;
+    transition: background 0.2s;
 }
 QPushButton:hover {
-    background-color: #e8f5e9;
-    color: #145a32;
-    border: 4px solid #219150;
+    background-color: #50576a;
+    color: #fff;
 }
 
+/* CheckBox */
 QCheckBox {
     spacing: 10px;
     font-size: 15px;
-    color: #145a32;
-    font-family: 'Consolas', monospace;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 QCheckBox::indicator {
     width: 22px;
     height: 22px;
-    border: 3px solid #4CAF50;
-    border-radius: 0px;
-    background: #fff;
+    border: 2px solid #7ee787;
+    border-radius: 6px;
+    background: #23272e;
 }
 QCheckBox::indicator:checked {
-    background: #4CAF50;
+    background: #7ee787;
     image: none;
 }
 
+/* Terminal más estrecha */
 QTextEdit#terminalBox {
-    background: #145a32;
-    color: #b9f6ca;
-    border-radius: 0px;
-    border: 4px solid #4CAF50;
-    padding: 25px;
+    background: #181c20;
+    color: #7ee787;
+    border-radius: 12px;
+    border: 2px solid #3a3f4b;
+    padding: 10px;
     font-family: 'Consolas', monospace;
     font-size: 14px;
-    min-width: 280px;
-    min-height: 160px;
+    min-width: 80px; /* Mantengo 80px como pediste */
+    min-height: 100px;
 }
 
+/* ScrollBar */
 QScrollBar:vertical {
-    background: #fff;
-    width: 18px;
+    background: #23272e;
+    width: 14px;
     margin: 4px 2px 4px 2px;
-    border-radius: 0px;
-    border: 3px solid #4CAF50;
+    border-radius: 7px;
+    border: 1px solid #3a3f4b;
 }
 QScrollBar::handle:vertical {
-    background: #4CAF50;
+    background: #7ee787;
     min-height: 32px;
-    border-radius: 0px;
+    border-radius: 7px;
 }
 QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
     height: 0px;
@@ -148,34 +191,8 @@ QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
 QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
     background: none;
 }
-
-/* Oculta solo la barra de scroll horizontal */
 QScrollBar:horizontal {
     height: 0px;
     background: transparent;
     border: none;
-}
-QGroupBox#gestionGroup {
-    border: 4px solid #4CAF50;
-    border-radius: 0px;
-    margin-top: 0px;
-    background: #fff;
-    padding-top: 18px;
-    box-shadow: none;
-}
-
-QGroupBox#gestionGroup:title {
-    subcontrol-origin: margin;
-    subcontrol-position: top center;
-    left: 0px;
-    right: 0px;
-    padding: 18px 12px 0 12px;
-    color: #219150;
-    font-weight: bold;
-    font-size: 21px;
-    letter-spacing: 1px;
-    background: transparent;
-    margin-top: 0px;
-    font-family: 'Press Start 2P', 'Consolas', monospace;
-    text-shadow: 2px 2px 0 #4CAF50;
 }

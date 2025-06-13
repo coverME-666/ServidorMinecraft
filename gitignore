@@ -1,5 +1,8 @@
+.venv
 .idea
 .idea/
 .Requerimients.md
 .idea/workspace.xml
 .mine-server/servers/
+.mine-server/ui/__pycache__
+.mine-server/core/__pycache__
