@@ -1,4 +1,0 @@
-.idea/
-.Requerimients.md
-.idea/workspace.xml
-.mine-server/servers/
