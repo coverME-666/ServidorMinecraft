@@ -1,7 +1,7 @@
 <p align="center"><a href="https://github.com/TU_USUARIO/TU_REPO"><img src="https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/logo.png" alt="Logo del proyecto" height="150"/></a></p>
 
-<h1 align="center">Mine :3</h1>
-<p align="center">Servidor de Minecraft sin importar la edicion :v</p>
+<h1 align="center">Nombre del Proyecto</h1>
+<p align="center">Descripción corta del propósito de tu proyecto</p>
 
 <p align="right">
   <a target="_blank" href="https://discord.gg/TU_INVITACION"><img src="https://discordapp.com/api/guilds/TU_ID/widget.png?style=shield" alt="Soporte en Discord"></a>
