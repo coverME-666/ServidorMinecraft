@@ -29,7 +29,7 @@ Thumbs.db
 *.swp
 *.sw?
 
-# virtual env
+# Python virtual env
 .venv
 
 # Env files
@@ -37,4 +37,3 @@ Thumbs.db
 
 # Otros
 .Requerimients.md
-
