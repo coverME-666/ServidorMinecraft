@@ -20,21 +20,8 @@ app_web/frontend/dist-ssr/
 .vscode/
 !.vscode/extensions.json
 .idea/
-.DS_Store
-Thumbs.db
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.swp
-*.sw?
-
-# virtual env
-.venv
-
-# Env files
-.env
-
-# Otros
 .Requerimients.md
-
+.idea/workspace.xml
+mine-server/servers/
+mine-server/ui/__pycache__/
+mine-server/core/__pycache__/
