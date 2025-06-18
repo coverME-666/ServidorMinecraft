@@ -1,7 +1,8 @@
-// Punto de entrada principal del backend
-require('dotenv').config();
-const express = require('express');
-const cors = require('cors');
+import dotenv from 'dotenv';
+dotenv.config();
+import express from 'express';
+import cors from 'cors';
+import helloRoutes from './routes/helloRoutes.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -9,11 +10,12 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-// Rutas base (puedes modularizar luego en src/routes)
-app.get('/', (req, res) => {
-  res.json({ message: '¡Backend ServerMine funcionando!' });
+app.get('/api/health', (req, res) => {
+  res.json({ status: "OK" });
 });
 
+app.use('/api/hello', helloRoutes);
+
 app.listen(PORT, () => {
-  console.log(`Servidor escuchando en http://localhost:${PORT}`);
+  console.log(`🚀 hello world desde: http://localhost:${PORT}`);
 });
