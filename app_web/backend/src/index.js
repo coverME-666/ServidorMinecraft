@@ -3,6 +3,7 @@ dotenv.config();
 import express from 'express';
 import cors from 'cors';
 import helloRoutes from './routes/helloRoutes.js';
+import serverRoutes from './routes/serverRoutes.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -15,6 +16,7 @@ app.get('/api/health', (req, res) => {
 });
 
 app.use('/api/hello', helloRoutes);
+app.use('/api/server', serverRoutes);
 
 app.listen(PORT, () => {
   console.log(`🚀 hello world desde: http://localhost:${PORT}`);
