@@ -21,7 +21,7 @@ class FabricService {
       console.error('Error fetching Fabric versions:', error);
       return {
         success: false,
-        versions: ['1.20.1', '1.19.4', '1.19.2'], // Fallback
+        versions: ['1.20.1', '1.19.1'], // Fallback
         total: 3,
         error: 'Error consultando API de Fabric'
       };

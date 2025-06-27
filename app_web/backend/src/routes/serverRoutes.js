@@ -16,7 +16,7 @@ router.get('/versions', (req, res) => serverController.getVersions(req, res));
  * @description Descarga y sube un servidor Minecraft a Google Drive
  * @access Public
  * @body {Object} { type: string, version: string }
- * @returns {Object} Estado de la descarga iniciada
+ * @returns {Object} Estado de la descarga iniciada  
  */
 router.post('/download', (req, res) => serverController.downloadServer(req, res));
 
