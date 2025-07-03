@@ -16,8 +16,13 @@ app_web/frontend/dist/
 app_web/frontend/dist-ssr/
 *.local
 
+# Downloads temporales
+app_web/backend/downloads/*
+!app_web/backend/downloads/.gitkeep
+
 # Editor directories and files
 .vscode/
 !.vscode/extensions.json
 .idea/
 .Requerimients.md
+.Notebook_Issues.md
