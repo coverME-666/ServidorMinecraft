@@ -26,3 +26,5 @@ app_web/backend/downloads/*
 .idea/
 .Requerimients.md
 .Notebook_Issues.md
+.Notebook_Issues
+.Issues.md
